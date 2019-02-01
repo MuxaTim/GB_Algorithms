@@ -8,6 +8,9 @@ double BMICalculator(double weight, double height)
 
 int main(int argc, const char * argv[])
 {
+	printf("Student: Timchenko Mikhail\nAlgorithms and data structures. Basic course.\nHomework #1\n\n");
+
+	printf("01. BMI Calculator.\n\n");
 	double weight;
 	double height;
 	double bmi;

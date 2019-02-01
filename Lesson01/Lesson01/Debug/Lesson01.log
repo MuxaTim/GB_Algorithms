@@ -1,7 +1,7 @@
 ﻿  Source.c
-c:\_gb\algorithms\lesson01\lesson01\source.c(22): warning C4013: getch: нет определения; предполагается "extern" с возвратом типа "int"
-c:\_gb\algorithms\lesson01\lesson01\source.c(15): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\_gb\algorithms\lesson01\lesson01\source.c(25): warning C4013: getch: нет определения; предполагается "extern" с возвратом типа "int"
+c:\_gb\algorithms\lesson01\lesson01\source.c(18): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note:  см. объявление "scanf"
-c:\_gb\algorithms\lesson01\lesson01\source.c(17): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\_gb\algorithms\lesson01\lesson01\source.c(20): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note:  см. объявление "scanf"
   Lesson01.vcxproj -> C:\_GB\Algorithms\Lesson01\Debug\Lesson01.exe
