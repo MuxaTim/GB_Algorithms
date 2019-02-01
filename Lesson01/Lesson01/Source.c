@@ -22,6 +22,23 @@ int main(int argc, const char * argv[])
 	bmi = BMICalculator(weight, height);
 	printf("Yor BMI is: %.2lf", bmi);
 
+	printf("\n\n02. Maximum.\n\n");
+	double a, max;
+	int counter = 0;
+	max = 0;
+
+	while (counter <= 3)
+	{
+		printf("%s", "Enter a:");
+		scanf("%lf", &a);
+		if (max < a)
+		{
+			max = a;
+		}
+		counter++;
+	}
+	printf("Maximum: %lf", max);
+
 	getch();
 	return 0;
 }
