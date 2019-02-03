@@ -1,9 +1,15 @@
 #include <stdio.h>
 #include <math.h>
 
-double BMICalculator(double weight, double height)
+float BMICalculator(float weight, float height)
 {
 	return weight / ( height * height );
+}
+
+double Discriminant(double a, double b, double c) 
+{
+	//D = b^2 - 4ac
+	return b * b - 4 * a * c;
 }
 
 int main(int argc, const char * argv[])
@@ -64,6 +70,32 @@ int main(int argc, const char * argv[])
 	printf("b1 = %i\n", b1);
 	printf("b2 = %i\n", b2);
 
+	//Задача №4 - Написать программу нахождения корней заданного квадратного уравнения.
+	printf("\n\n04. Quadratic equation.\n\n");
+	double _a, _b, _c, _discriminant, _x;
+	//ax2 + bx + c = 0
+	printf("%s", "ax2 + bx + c = 0\n");
+	printf("%s", "Enter a:");
+	scanf("%lf", &_a);
+	printf("%s", "Enter b:");
+	scanf("%lf", &_b);
+	printf("%s", "Enter c:");
+	scanf("%lf", &_c);
+	_discriminant = Discriminant(_a, _b, _c);
+	printf("Discriminant = %lf\n", _discriminant);
+	if (_discriminant < 0) {
+		printf("D < 0. This equation has no real roots.");
+	}
+	else if (_discriminant == 0 ) {
+		_x = -(_b / 2 * _a);
+		printf("x = %lf", _x);
+	}
+	else {
+		_x = (-1 * _b - sqrt(_discriminant)) / (2 * _a);
+		printf("x1 = %lf\n", _x);
+		_x = (-1 * _b + sqrt(_discriminant)) / (2 * _a);
+		printf("x2 = %lf\n", _x);
+	}
 
 	getch();
 	return 0;
